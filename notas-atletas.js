@@ -5,6 +5,8 @@ class Atleta {
         this.notas = notas
     }obterNome(){
         return this.nome
+    }obterNotasOrdenada(){
+        return this.notas.slice().sort((a, b) => a - b)
     }
 
     calcularMediaNota() {
